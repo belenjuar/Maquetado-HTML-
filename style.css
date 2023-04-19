@@ -1,0 +1,72 @@
+body {
+    background: #f2f2f2;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+    /* font-style: italic; */
+    /* text-decoration: underline; */ 
+}
+
+h1{
+    font-size: 3em;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.destacado {
+    background: pink;
+}
+
+#cabecera {
+    background: black;
+}
+
+/* era para usar <div id="cabecera"> 
+                 <h1>Titulo 1</h1> */
+
+.intro {
+    margin: 2em;
+    /* si quiero colocar borde entonces agrego border: 2px red solid;*/
+    padding: 2em;
+    /*background: url(images/hola.png) no-repeat top right; /* puede ser un color o una imagen por ejemplo white* o url(images/hola.png), puedo definir si se repite imagen o no con no-repeat al final o la posicion: top right, el tamaño tambien decido con background-size*/
+    /*background-size: cover; */
+    /*para agregar degradado
+    background-image: linear-gradient(#f5f5)*/
+    background: #ad9d9dea; 
+    position: relative; /* para que coincida con tag*/
+
+}
+
+.intro__img{
+    height: 10em;
+    width: 10%;
+    object-fit: cover; /*fill= rellenar; cover=imagen centrada*/
+}
+
+.intro__title {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.3em;
+}
+
+.intro__p {
+    margin-bottom: 0;
+/* para cada valor puedo usar margin: 0 0 0 0 o bien margin-left/right */    
+}
+
+.intro__tag {
+    background: pink;
+    color: black;
+    padding: 0.5em;
+    position: fixed; /*(static) estatico es por defecto, queda en donde esta primero, absolute: posicion que nosotros queremos, fixed: absoluta pero de manera estatica se mueve con la pagina*/
+    right: 0;
+    top:0;
+}
